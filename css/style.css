@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* Reset Default Margin and Padding*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.7em;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Styling Main Section */
+
+.wrapper {
+    display: flex;
+}
+
+.title {
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid black;
+    width: 130px;
+    text-align: center;
+    float: right;
+    border-radius: 5px;
+    font-size: 0.85em;
+    margin: -2px -2px 0 0;
+    padding: 4px 0;
+}
+
+.ck {
+    background-color: #D59898;
+    color: #f2c4c4;
+}
+
+.bf {
+    background-color: #C14543;
+    color: #821717;
+}
+
+.sh {
+    background-color: #E5D198;
+    color: #d8ac34;
+}
+
+.chicken,
+.beef,
+.sushi {
+    border: 2px solid black;
+    background: #999999;
+    border-radius: 7px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+/* Responsive Setting Section */
+
+/* desktop version */
+@media (min-width: 992px) {
+
+    .chicken,
+    .beef,
+    .sushi {
+        width: 33.3%;
+        margin: 10px;
+    }
+}
+
+/* tablet version */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .chicken,
+    .beef {
+        width: 47%;
+    }
+
+    .sushi {
+        width: 100%;
+    }
+}
+
+/* mobile version */
+@media (max-width: 767px) {
+
+    .wrapper {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
