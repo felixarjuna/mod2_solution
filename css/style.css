@@ -83,11 +83,18 @@ p {
 
 /* tablet version */
 @media (min-width: 768px) and (max-width: 991px) {
-    /*
+
     .wrapper {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    .chicken,
+    .beef,
+    .sushi {
+        margin: 10px;
     }
 
     .chicken,
@@ -99,8 +106,8 @@ p {
         width: 100%;
     }
 }
-    */
 
+/* Float Elements
     .chicken {
         float: left;
         width: 48%;
@@ -119,7 +126,7 @@ p {
         margin: 10px;
     }
 }
-
+    */
 /* mobile version */
 @media (max-width: 767px) {
 
