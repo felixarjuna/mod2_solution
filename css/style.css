@@ -20,11 +20,6 @@ h1 {
 }
 
 /* Styling Main Section */
-
-.wrapper {
-    display: flex;
-}
-
 .title {
     font-family: 'Ubuntu', sans-serif;
     border: 2px solid black;
@@ -59,7 +54,6 @@ h1 {
     background: #999999;
     border-radius: 7px;
     font-weight: 400;
-    margin: 10px;
 }
 
 p {
@@ -75,6 +69,10 @@ p {
 /* desktop version */
 @media (min-width: 992px) {
 
+    .wrapper {
+        display: flex;
+    }
+
     .chicken,
     .beef,
     .sushi {
@@ -85,7 +83,7 @@ p {
 
 /* tablet version */
 @media (min-width: 768px) and (max-width: 991px) {
-
+    /*
     .wrapper {
         flex-direction: row;
         flex-wrap: wrap;
@@ -101,6 +99,26 @@ p {
         width: 100%;
     }
 }
+    */
+
+    .chicken {
+        float: left;
+        width: 48%;
+        margin: 10px 0px 10px 10px;
+    }
+
+    .beef {
+        float: right;
+        width: 48%;
+        margin: 10px 10px 10px 0;
+    }
+
+    .sushi {
+        width: 97.6%;
+        clear: both;
+        margin: 10px;
+    }
+}
 
 /* mobile version */
 @media (max-width: 767px) {
@@ -109,5 +127,11 @@ p {
         flex-direction: column;
         width: 100%;
         align-items: center;
+    }
+
+    .chicken,
+    .beef,
+    .sushi {
+        margin: 10px;
     }
 }
